@@ -1,0 +1,134 @@
+.App{
+  padding: 0 20px;
+  text-align: center;
+  min-height: 100vh;
+}
+
+.header{
+  height: 40px;
+  font-size: 26px;
+}
+
+.dropzone-container{
+  height: 80px;
+  background: #ffffff;
+  border: 1px dashed gray;
+
+  p{
+    margin: 0;
+  }
+}
+
+.dropzone{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+.preview-container{
+  padding-top: 10px;
+  display: flex;
+}
+
+
+.image-container{
+  width: 300px;
+}
+
+.image{
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.select{
+  width: 100px;
+  cursor: pointer;
+}
+
+.controls-container{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  width: 300px;
+  padding: 0 25px;
+}
+
+.padding-controls-container{
+  width: 200px;
+  input{
+    width: 60px;
+    margin-right: 5px;
+  }
+}
+
+.control{
+  display: flex;
+  align-items: center;
+  padding: 5px 0;
+}
+.padding-control{
+  margin-bottom: 15px;
+}
+
+.control-value{
+  width: 45px;
+  cursor: auto;
+}
+
+
+.shadow-controls-container{
+  flex-direction: row;
+  justify-content: space-between;
+  width: 400px;
+  input{
+    width: 60px;
+    margin-right: 5px;
+  }
+}
+
+.shadow-inputs{
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+
+.download-container{
+  display: flex;
+  width: 300px;
+  justify-content: space-between;
+  margin-bottom: 15px;
+}
+
+.button{
+  cursor: pointer;
+  background-color: black;
+  color: white;
+  border: none;
+  border-radius: 2px;
+  padding: 0 15px;
+}
+
+.download:disabled{
+  opacity: 0.5;
+  cursor: auto;
+}
+
+.edit-container{
+  display: flex;
+  justify-content: center;
+  border-top: 1px solid #333333;
+}
+
+.canvas-container{
+  margin-top: 30px;
+}
+
+.canvas{
+  border: 1px solid #000000;
+}
+
+
