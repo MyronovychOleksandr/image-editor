@@ -14,7 +14,7 @@ import {
     DEFAULT_SHADOW_COLOR,
     PNG_FILE_EXT,
     DEFAULT_CANVAS_BACKGROUND_COLOR,
-    IMAGES_FOLDER_NAME, PREVIEW_IMAGE_ALT
+    IMAGES_FOLDER_NAME, PREVIEW_IMAGE_ALT, FILE_PATH_LABEL, DEBOUNCE_DELAY
 } from "./constants";
 
 import Select from 'react-select'
@@ -36,8 +36,8 @@ const App = () => {
     const [imgType, setImgType] = useState(options[0])
     const [shadowColor, setShadowColor] = useState(DEFAULT_SHADOW_COLOR)
 
-    const isNotEmpty = file.hasOwnProperty('path');
-    const [debouncedEditSettings] = useDebounce(editSettings, 300);
+    const isNotEmpty = file.hasOwnProperty(FILE_PATH_LABEL);
+    const [debouncedEditSettings] = useDebounce(editSettings, DEBOUNCE_DELAY);
 
     const canvasFunc = () => {
         const canvas = document.querySelector("#canvas");

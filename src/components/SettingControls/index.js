@@ -1,4 +1,14 @@
 import React from 'react';
+import {
+    BLUR_MAX_VALUE,
+    BLUR_MIN_VALUE, BLUR_STEP, BRIGHTNESS_MAX_VALUE, BRIGHTNESS_MIN_VALUE, BRIGHTNESS_STEP,
+    QUALITY_MAX_VALUE,
+    QUALITY_MIN_VALUE,
+    QUALITY_STEP,
+    SCALE_MAX_VALUE,
+    SCALE_MIN_VALUE,
+    SCALE_STEP, SEPIA_MAX_VALUE, SEPIA_MIN_VALUE, SEPIA_STEP
+} from "../../constants";
 
 const SettingsControls = ({onHandleInput, editSettings,}) => {
 
@@ -12,9 +22,9 @@ const SettingsControls = ({onHandleInput, editSettings,}) => {
                            name="scale"
                            value={editSettings.scale}
                            onChange={onHandleInput}
-                           min="0.2"
-                           max="3"
-                           step="0.1"
+                           min={SCALE_MIN_VALUE}
+                           max={SCALE_MAX_VALUE}
+                           step={SCALE_STEP}
                     />
                     Scale</label>
             </div>
@@ -26,9 +36,9 @@ const SettingsControls = ({onHandleInput, editSettings,}) => {
                         id="quality"
                         name="quality"
                         value={editSettings.quality}
-                        min="0"
-                        max="1"
-                        step="0.01"
+                        min={QUALITY_MIN_VALUE}
+                        max={QUALITY_MAX_VALUE}
+                        step={QUALITY_STEP}
                         onChange={onHandleInput}
                     />
                     Quality</label>
@@ -41,9 +51,9 @@ const SettingsControls = ({onHandleInput, editSettings,}) => {
                         id="blur"
                         name="blur"
                         value={editSettings.blur}
-                        min="0"
-                        max="100"
-                        step="1"
+                        min={BLUR_MIN_VALUE}
+                        max={BLUR_MAX_VALUE}
+                        step={BLUR_STEP}
                         onChange={onHandleInput}
                     />
                     Blur</label>
@@ -56,9 +66,9 @@ const SettingsControls = ({onHandleInput, editSettings,}) => {
                         id="sepia"
                         name="sepia"
                         value={editSettings.sepia}
-                        min="0"
-                        max="100"
-                        step="1"
+                        min={SEPIA_MIN_VALUE}
+                        max={SEPIA_MAX_VALUE}
+                        step={SEPIA_STEP}
                         onChange={onHandleInput}
                     />
                     Sepia</label>
@@ -71,9 +81,9 @@ const SettingsControls = ({onHandleInput, editSettings,}) => {
                         id="brightness"
                         name="brightness"
                         value={editSettings.brightness}
-                        min="0"
-                        max="100"
-                        step="1"
+                        min={BRIGHTNESS_MIN_VALUE}
+                        max={BRIGHTNESS_MAX_VALUE}
+                        step={BRIGHTNESS_STEP}
                         onChange={onHandleInput}
                     />
                     Brightness</label>
