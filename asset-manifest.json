@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/image-editor/static/css/main.5ff2d5c0.css",
+    "main.js": "/image-editor/static/js/main.2f778653.js",
+    "index.html": "/image-editor/index.html",
+    "main.5ff2d5c0.css.map": "/image-editor/static/css/main.5ff2d5c0.css.map",
+    "main.2f778653.js.map": "/image-editor/static/js/main.2f778653.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.5ff2d5c0.css",
+    "static/js/main.2f778653.js"
+  ]
+}
